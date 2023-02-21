@@ -12,10 +12,14 @@ import absl.logging as _logging  # pylint: disable=unused-import
 import numpy as np
 
 import tensorflow as tf
-import .model_utils
-import .tpu_estimator
-import .function_builder
-import .data_utils
+from . import model_utils 
+from . import tpu_estimator
+from . import function_builder
+from . import data_utils
+# import .model_utils
+# import .tpu_estimator
+# import .function_builder
+# import .data_utils
 
 # TPU parameters
 flags.DEFINE_string("master", default=None,

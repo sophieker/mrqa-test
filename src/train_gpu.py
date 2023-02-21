@@ -14,10 +14,15 @@ import absl.logging as _logging  # pylint: disable=unused-import
 
 import tensorflow as tf
 
-import .data_utils
-import .model_utils
-from .gpu_utils import assign_to_gpu, average_grads_and_vars
-import .function_builder
+from . import data_utils
+from . import model_utils
+from . import function_builder
+from . import gpu_utils
+
+# import .data_utils
+# import .model_utils
+# from .gpu_utils import assign_to_gpu, average_grads_and_vars
+# import .function_builder
 
 
 # GPU config
